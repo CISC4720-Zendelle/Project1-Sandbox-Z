@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Text-Twist Clone</title>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/xregexp/3.2.0/xregexp-all.min.js'></script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<!-- partial:index.partial.html -->
+<div class="container" id="game">
+   <div class="row my-3"> 
+    <h1 id="STARTERS">Text Twist</h1>
+   </div>
+  <div class="row">
+     <ol id="pwords">  
+    </ol>
+  </div>
+  
+  <div class="row">
+     <input id="guess" type="text" placeholder="type guesses here">     </input>
+  </div>
+  
+<button id="btn" onclick='generateWord()'>Generate word</button>  
+
+  <div>
+    <ul id="guesses">
+    </ul>
+  </div>
+
+</div>
+
+
+<script  defer src="script.js"></script>
+<!-- <script  src="script.js"></script> -->
+
+</body>
+</html>
